@@ -41,7 +41,9 @@ app.post('/login', (req, res) => {
       sub: authUser.id,
       username: authUser.username,
     },
+    //secret string
     'test_secret_key',
+    //options
     {
       expiresIn: '30 minutes',
     },
